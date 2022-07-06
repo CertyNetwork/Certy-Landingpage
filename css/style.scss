@@ -457,7 +457,7 @@ section.near {
   }
   img.icon_near_botom_r {
     position: absolute;
-    right: 80px;
+    right: -77px;
     bottom: -45px;
   }
   img.icon_robot_bottom {
@@ -887,6 +887,9 @@ img.Pattern-563 {
   .wp-not-full {
     width: 1280px;
     margin: auto;
+  }
+  .menuMobi {
+    display: none;
   }
 }
 
@@ -1506,5 +1509,8 @@ header.sticky.hahaActive {
     position: relative;
     left: -6px;
     top: 0px;
+}
+.wp-mobi-app{
+  display: block !important;
 }
 }

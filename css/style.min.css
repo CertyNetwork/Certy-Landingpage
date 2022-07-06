@@ -79,7 +79,7 @@ section.ceLearning .wrapper-ceLearning .wrapper-ceLearning-right .wrapper-ceLear
 section.ceLearning .wrapper-ceLearning .wrapper-ceLearning-right .wrapper-ceLearning-images img{width:100%;height:100%;object-fit:cover;border-radius:20px}
 section.near{position:relative;padding-bottom:25px;padding-top:100px;background-image:url(../images/bg546565.png);background-size:cover;color:#fff;margin-bottom:45px}
 section.near img.icon_near_botom_l{position:absolute;left:80px;top:50px}
-section.near img.icon_near_botom_r{position:absolute;right:80px;bottom:-45px}
+section.near img.icon_near_botom_r{position:absolute;right:-77px;bottom:-45px}
 section.near img.icon_robot_bottom{position:absolute;bottom:-115px}
 section.near .wrapper-near{display:flex;align-items:center;flex-wrap:wrap}
 section.near .wrapper-near .wrapper-near-left{width:50%;box-sizing:border-box}
