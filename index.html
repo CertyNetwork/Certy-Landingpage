@@ -12,7 +12,34 @@
     ></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Certify Your Future</title>
-    <link type="image/x-icon" href="./images/icon/favicon.ico" rel="shortcut icon" />
+    <link
+      type="image/x-icon"
+      href="./images/icon/favicon.ico"
+      rel="shortcut icon"
+    />
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyARZKxWD9UF9vrmLCi4uvbWfwSVAtsEf4M",
+        authDomain: "certy-bc908.firebaseapp.com",
+        projectId: "certy-bc908",
+        storageBucket: "certy-bc908.appspot.com",
+        messagingSenderId: "957071661367",
+        appId: "1:957071661367:web:f28d3a4e67afd8979862b2",
+        measurementId: "G-TP6HYS786E",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </head>
 
   <body>
@@ -200,7 +227,10 @@
           />
           <div class="wrapper-ceSocial">
             <div class="wrapper-ceSocial-left">
-              <div class="wrapper-ceSocial-image-content">
+              <div
+                class="wrapper-ceSocial-image-content"
+                style="padding-left: 70px"
+              >
                 <span
                   class="stick"
                   data-aos="fade-down"
@@ -243,7 +273,7 @@
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600"
               >
-                <img src="./images/image-123.png" alt="images" />
+                <img src="./images/cesocial.png" alt="images" />
               </div>
             </div>
           </div>
@@ -388,10 +418,10 @@
                   CeLearning
                 </h2>
                 <p data-aos-duration="600">
-                  Using Artificial Intelligence, our tokenized <b>Learn-To-Earn
-                    model</b> will help personalize students' learning pathways
-                  suiting their career orientation while motivating them with
-                  incentive rewards.
+                  Using Artificial Intelligence, our tokenized
+                  <b>Learn-To-Earn model</b> will help personalize students'
+                  learning pathways suiting their career orientation while
+                  motivating them with incentive rewards.
                 </p>
                 <a href="#" class="button" style="visibility: hidden"
                   >discover</a
@@ -425,18 +455,13 @@
         src="./images/icon/icon_bootm_left.svg"
         alt=""
       />
-      <!-- <img
+      <img
         class="icon_near_botom_r"
         src="./images/icon/bg_bottom_ri.svg"
         alt=""
-      /> -->
+      />
       <img class="icon_robot_bottom" src="./images/Image44d56df65.png" alt="" />
-      <div class="wp-not-full" style="position: relative;">
-        <img
-          class="icon_near_botom_r"
-          src="./images/icon/bg_bottom_ri.svg"
-          alt=""
-        />
+      <div class="wp-not-full">
         <div class="wrapper-near">
           <div class="wrapper-near-left">
             <div
@@ -470,6 +495,9 @@
                 <div
                   class="wrapper-near-box-content-items"
                   data-aos-duration="600"
+                  data-aos="fade-down"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="400"
                 >
                   <img src="./images/f6d5g6d5g6s.svg" alt="near" />
                 </div>
@@ -506,11 +534,12 @@
           data-aos="fade-down"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1000"
+          style="display: flex; gap: 25px;"
         >
-          <a href="#"
+          <a href="#" style="width: 168px"
             ><img src="./images/icon-new/bhujnkl.svg" alt="placeholder+image"
           /></a>
-          <a href="#"
+          <a href="#" style="width: 168px"
             ><img src="./images/logoNext.png" alt="placeholder+image"
           /></a>
         </div>
@@ -547,7 +576,7 @@
               <div class="Roadmap-wp-box-r-list">
                 <div class="line-g"></div>
                 <div
-                  class="Roadmap-wp-box-r-items avct"
+                  class="Roadmap-wp-box-r-items"
                   data-aos="fade-down"
                   data-aos-easing="ease-in-sine"
                   data-aos-duration="1000"
@@ -629,18 +658,20 @@
           >
             Subscribe for early access
           </h3>
-          <form
-            action="post"
+          <form 
+            id="form_send"
             data-aos="fade-down"
             data-aos-easing="ease-in-sine"
             data-aos-delay="300"
             data-aos-duration="600"
           >
             <input type="text" placeholder="Enter your email here" required />
-            <button disabled type="submit">
+            <button type="submit">
               <img src="./images/arrow-right-form.svg" />
             </button>
+            <p class="mess_form"></p>
           </form>
+
         </div>
       </div>
     </div>
@@ -652,7 +683,10 @@
             <a href="#">
               <img src="./images/logo-footer.svg" alt="" />
             </a>
-            <p>Improve career development and pave the way to the future.</p>
+            <p>
+              Improve career development <br />
+              and pave the way to the future.
+            </p>
           </div>
           <div class="wrapper-footer-content">
             <div class="menu-footer">
@@ -708,7 +742,8 @@
                 </li>
 
                 <li>
-                  <a target="_blank"
+                  <a
+                    target="_blank"
                     href="https://www.youtube.com/channel/UC1IR8oKCHkpy4VEC0w9Ozgg"
                   >
                     <img src="./images/Youtube.svg" alt="" />
@@ -745,7 +780,8 @@
                   </a>
                 </li>
                 <li>
-                  <a target="_blank"
+                  <a
+                    target="_blank"
                     href="https://www.youtube.com/channel/UC1IR8oKCHkpy4VEC0w9Ozgg"
                   >
                     <img src="./images/mxh/icon-6.svg" alt="" />
@@ -764,6 +800,7 @@
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
   AOS.init();
 </script>
@@ -825,7 +862,7 @@
     if (window.matchMedia("(max-width: 767px)").matches) {
       banner.attr("src", "./images/s545_BG.png");
     } else {
-      banner.attr("src", "./images/bg-banner.jpg");
+      banner.attr("src", "./images/banner15.png");
     }
   });
 </script>
@@ -836,5 +873,48 @@
       jQuery("header").toggleClass("hahaActive");
       jQuery(this).toggleClass("kakaActive");
     });
+  });
+</script>
+<script type="text/javascript">
+
+  var form_id = "form_send";
+
+    var data = {
+        "access_token": "x7irbtnzn2woln3ji5og6jqa"
+    };
+
+    function onSuccess() {
+      jQuery('#form_send p').text('You have successfully subscribed to this newsletter.')
+      jQuery('#form_send input').val('');
+    }
+
+    function onError(error) {
+      const el = jQuery('#form_send p');
+        el.text('Errors Form !');
+        el.addClass('mess_error');
+        jQuery('#form_send input').val('');
+    }
+
+
+    function send() {
+        var subject = "WEB SIZE";
+        var message = `Email: ${jQuery('#form_send input').val()}`;
+        data['subject'] = subject;
+        data['text'] = message;
+
+        $.post('https://postmail.invotes.com/send',
+            data,
+            onSuccess
+        ).fail(onError);
+
+        return false;
+    }
+
+  $( "#form_send" ).submit(function( event ) {
+    event.preventDefault();
+    var email = jQuery('#form_send input').val();
+    if(email){
+      send();
+    }
   });
 </script>
